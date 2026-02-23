@@ -7,7 +7,11 @@ export default function ChikmagalurStory() {
   return (
     <>
       <Navbar />
-      <main className="bg-brand-ink text-brand-cream pt-32 pb-20 px-6 min-h-screen">
+      
+      {/* Main content uses brand-ink (#2E3A24)
+          The bg-grain provides the tactile, paper-like texture
+      */}
+      <main className="bg-brand-ink bg-grain text-brand-cream pt-32 pb-20 px-6 min-h-screen">
         <article className="max-w-4xl mx-auto">
           <motion.header 
             initial={{ opacity: 0 }}
@@ -44,7 +48,11 @@ export default function ChikmagalurStory() {
           </section>
         </article>
       </main>
-      <Footer />
+
+      {/* UPDATED: Using variant="ink" so the footer matches the page background
+          This ensures the #2E3A24 color remains consistent to the bottom of the page
+      */}
+      <Footer variant="ink" />
     </>
   );
 }

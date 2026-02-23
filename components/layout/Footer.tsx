@@ -1,8 +1,13 @@
+'use client';
 import Link from 'next/link';
 
-export default function Footer() {
+// We add a variant prop to toggle between Forest and Ink backgrounds
+export default function Footer({ variant = 'forest' }: { variant?: 'forest' | 'ink' }) {
+  // Logic to switch colors based on the page context
+  const bgColor = variant === 'ink' ? 'bg-brand-ink' : 'bg-brand-forest';
+  
   return (
-    <footer className="bg-brand-forest text-brand-cream py-20 px-6">
+    <footer className={`${bgColor} bg-grain text-brand-cream py-20 px-6 transition-colors duration-500`}>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>
           <h2 className="text-4xl font-serif mb-6 tracking-tight">Tresoro Coffee</h2>
@@ -15,18 +20,16 @@ export default function Footer() {
         </div>
 
         <div className="grid grid-cols-2 gap-8 md:gap-12">
-          {/* Section 1: The Narrative (Founder & Legend Focus) */}
+          {/* Section 1: The Narrative */}
           <div className="space-y-6">
             <h4 className="text-brand-sand uppercase tracking-[0.3em] text-[10px] font-bold">The Narrative</h4>
             <ul className="space-y-4 text-xs font-semibold uppercase tracking-widest">
               <li>
-                {/* This link leads to the Baba Budan / Chikmagalur Story */}
                 <Link href="/heritage/chikmagalur" className="hover:text-brand-sand transition-colors">
                   The Seven Seeds
                 </Link>
               </li>
               <li>
-                {/* This link will focus on the Founders' Idea/Thought */}
                 <Link href="/vision" className="hover:text-brand-sand transition-colors">
                   The Founders' Why
                 </Link>

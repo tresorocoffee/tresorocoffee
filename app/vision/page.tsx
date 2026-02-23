@@ -2,7 +2,7 @@
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
-import Link from 'next/link'; // ADDED THIS IMPORT TO FIX THE ERROR
+import Link from 'next/link';
 
 export default function VisionPage() {
   return (
@@ -28,16 +28,11 @@ export default function VisionPage() {
 
           {/* Long-form SEO Content */}
           <section className="prose prose-lg prose-serif text-brand-ink/80 leading-relaxed space-y-12">
-            
             <h2 className="text-3xl md:text-4xl font-serif text-brand-ink">The Kitchen Table Realization</h2>
             <p>
               Every great idea begins with a moment of friction. For us, that moment happened over a simple cup of morning coffee. Like most Indians, we grew up believing that the thick, bitter, and slightly woody taste in our cups was the "authentic" flavor of our land.
             </p>
-            <p>
-              The turning point came when we tasted a pure, unadulterated Robusta straight from a small estate in Balehonnur. The difference wasn't just noticeable—it was jarring. That was the moment of "The Why." Why was the world-class coffee being grown in our backyard not the coffee being served in our homes?
-            </p>
 
-            {/* Blockquote for visual break */}
             <div className="bg-brand-forest text-brand-cream p-12 rounded-[3rem] my-16 shadow-2xl relative overflow-hidden">
                 <span className="absolute top-4 right-8 text-9xl opacity-10 font-serif">“</span>
                 <p className="text-2xl md:text-3xl font-serif relative z-10 leading-snug">
@@ -45,16 +40,19 @@ export default function VisionPage() {
                 </p>
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-serif text-brand-ink">Unmasking the Chicory Lie</h2>
             <p>
-              As we dug deeper, we discovered the history of the "Chicory Lie." Born out of wartime necessity in the 1940s to stretch meager coffee supplies, chicory was never meant to be a permanent guest in the Indian cup. 
-            </p>
-            <p>
-              Our idea was simple: **0% Compromise.** We decided to build a brand that treated coffee as a treasure—Tresoro. This meant going straight to the source—the mist-covered estates of Chikmagalur.
+              Tresoro is our effort to restore that heritage—unadulterated and unapologetic. We are building this for the youth who care about where their food comes from, who value transparency over flashy marketing, and who deserve to taste the 'King of Robusta' in its purest form.
             </p>
 
+            {/* FOUNDERS' SIGNATURE SECTION */}
+            <div className="mt-20 pt-10 flex flex-col items-center border-t border-brand-sand/20">
+              <p className="text-brand-ink/50 text-sm italic mb-4">With honesty and conviction,</p>
+              <h4 className="text-4xl md:text-5xl font-serif text-brand-ink tracking-tighter italic">The Founders of Tresoro</h4>
+              <div className="w-16 h-px bg-brand-leaf mt-6" />
+            </div>
+
             {/* Join the Movement Section */}
-            <div className="pt-16 border-t border-brand-sand/30 flex flex-col items-center">
+            <div className="pt-16 flex flex-col items-center">
               <h3 className="text-2xl font-serif mb-8 text-brand-ink">Join the Movement</h3>
               <Link 
                 href="/shop" 

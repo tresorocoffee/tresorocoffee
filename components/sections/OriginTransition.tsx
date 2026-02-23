@@ -41,7 +41,8 @@ export default function OriginTransition() {
   const x = useTransform(scrollYProgress, [0.1, 0.9], ["0%", "-200%"]);
 
   return (
-    <section ref={containerRef} className="relative h-[300vh] bg-brand-ink overflow-visible">
+    /* ADDED bg-grain HERE to apply the noise texture to the brand-ink background */
+    <section ref={containerRef} className="relative h-[300vh] bg-brand-ink bg-grain overflow-visible">
       {/* THE CONNECTING STEM (Life Line) */}
       <div className="sticky top-1/2 w-full h-[2px] bg-brand-sand/10 z-0">
         <motion.div 
