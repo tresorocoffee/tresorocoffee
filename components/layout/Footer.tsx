@@ -10,33 +10,35 @@ export default function Footer() {
             "It's not just Coffee. It's Tresoro."
           </p>
           <p className="text-brand-sand/40 text-xs mt-6 leading-relaxed max-w-xs">
-            Restoring the heritage of unadulterated coffee from the heart of Balehonnur, Chikmagalur.
+            A movement to restore the unadulterated heritage of Indian coffee.
           </p>
         </div>
 
         <div className="grid grid-cols-2 gap-8 md:gap-12">
-          {/* Discover Section */}
+          {/* Section 1: The Narrative (Founder & Legend Focus) */}
           <div className="space-y-6">
-            <h4 className="text-brand-sand uppercase tracking-[0.3em] text-[10px] font-bold">Discover</h4>
+            <h4 className="text-brand-sand uppercase tracking-[0.3em] text-[10px] font-bold">The Narrative</h4>
             <ul className="space-y-4 text-xs font-semibold uppercase tracking-widest">
               <li>
-                <Link href="/heritage" className="hover:text-brand-sand transition-colors">Our Story</Link>
+                {/* This link leads to the Baba Budan / Chikmagalur Story */}
+                <Link href="/heritage/chikmagalur" className="hover:text-brand-sand transition-colors">
+                  The Seven Seeds
+                </Link>
               </li>
               <li>
-                <Link href="/heritage" className="hover:text-brand-sand transition-colors">Balehonnur Origin</Link>
-              </li>
-              <li>
-                <Link href="/shop" className="hover:text-brand-sand transition-colors">The Collection</Link>
+                {/* This link will focus on the Founders' Idea/Thought */}
+                <Link href="/vision" className="hover:text-brand-sand transition-colors">
+                  The Founders' Why
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Connect Section */}
+          {/* Section 2: Community */}
           <div className="space-y-6">
-            <h4 className="text-brand-sand uppercase tracking-[0.3em] text-[10px] font-bold">Connect</h4>
+            <h4 className="text-brand-sand uppercase tracking-[0.3em] text-[10px] font-bold">Community</h4>
             <ul className="space-y-4 text-xs font-semibold uppercase tracking-widest">
               <li>
-                {/* UPDATED INSTAGRAM LINK */}
                 <a 
                   href="https://www.instagram.com/tresorocoffee/" 
                   target="_blank" 
@@ -47,10 +49,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-brand-sand transition-colors">Contact Us</Link>
-              </li>
-              <li>
-                <Link href="/shop" className="hover:text-brand-sand transition-colors font-bold text-brand-sand">Shop Now</Link>
+                <Link href="/contact" className="hover:text-brand-sand transition-colors">
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
@@ -59,7 +60,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto pt-16 mt-16 border-t border-brand-cream/10 flex flex-col md:flex-row justify-between items-start gap-4">
         <div className="text-[9px] uppercase tracking-[0.3em] opacity-40">
-          © 2026 Tresoro Coffee. Sourced with pride from Chikmagalur.
+          © 2026 Tresoro Coffee. Born from an idea in Chikmagalur.
         </div>
       </div>
     </footer>

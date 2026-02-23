@@ -36,32 +36,30 @@ export default function StoryGrid() {
           </p>
         </motion.div>
 
-        {/* Card 2: The Chicory Lie (Slow Parallax + Hover Effect) */}
-        <motion.div 
-          style={{ y: ySlow }}
-          whileHover={{ scale: 1.02 }}
-          className="order-2 md:col-span-4 md:row-span-2 bg-brand-mocha rounded-[2.5rem] p-10 flex flex-col justify-between text-brand-cream shadow-lg"
-        >
-          <div>
-            <span className="text-brand-sand font-bold tracking-widest uppercase text-[10px]">
-              The Unfiltered History
-            </span>
-            <h3 className="text-3xl font-serif mt-6 mb-6 leading-tight">The Chicory Lie.</h3>
-            <p className="text-sm opacity-80 leading-relaxed mb-8">
-              During wartime, a shortage of coffee led to the use of chicory as a filler. 
-              Today, companies still use it to cut costs, masking the real flavor.
-            </p>
-            
-            <Link 
-              href="/heritage" 
-              className="inline-flex items-center gap-2 text-brand-sand font-bold text-xs uppercase tracking-widest hover:text-brand-cream transition-colors group"
-            >
-              Read the full story 
-              <span className="group-hover:translate-x-1 transition-transform">→</span>
-            </Link>
-          </div>
-          <div className="text-5xl opacity-20 font-serif self-end italic select-none">0%</div>
-        </motion.div>
+        {/* Card 2: The Chicory Truth Card */}
+<motion.div 
+  style={{ y: ySlow }}
+  whileHover={{ scale: 1.02 }}
+  className="order-2 md:col-span-4 md:row-span-2 bg-brand-mocha rounded-[2.5rem] p-10 flex flex-col justify-between text-brand-cream shadow-lg"
+>
+  <div>
+    <span className="text-brand-sand font-bold tracking-widest uppercase text-[10px]">The Unfiltered History</span>
+    <h3 className="text-3xl font-serif mt-6 mb-6 leading-tight">The Chicory Lie.</h3>
+    <p className="text-sm opacity-80 leading-relaxed mb-8">
+      Wartime fillers became corporate habits. We are here to bring back the true experience.
+    </p>
+    
+    {/* POINTING DIRECTLY TO YOUR NEW LONG-FORM BLOG */}
+    <Link 
+      href="/heritage" 
+      className="inline-flex items-center gap-2 text-brand-sand font-bold text-xs uppercase tracking-widest hover:text-brand-cream transition-colors group"
+    >
+      Read the full story 
+      <span className="group-hover:translate-x-1 transition-transform">→</span>
+    </Link>
+  </div>
+  <div className="text-5xl opacity-20 font-serif self-end italic select-none">0%</div>
+</motion.div>
 
         {/* Card 3: Honesty in a Cup (Subtle Rotation) */}
         <motion.div 
