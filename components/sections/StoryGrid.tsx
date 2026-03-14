@@ -35,21 +35,21 @@ export default function StoryGrid() {
       */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 md:auto-rows-[300px]">
         
-        {/* Card 1: The Balehonnur Legacy */}
+        {/* Card 1: The Chikkamagaluru Legacy */}
         <motion.div 
           style={{ y: yFastValue }}
           whileHover={{ scale: 1.01, translateY: -5 }}
           className="order-1 md:col-span-8 md:row-span-1 bg-brand-sand/30 rounded-[2.5rem] p-10 flex flex-col justify-start border border-brand-sand/50 shadow-sm transition-shadow hover:shadow-xl overflow-hidden"
         >
           <span className="text-brand-leaf font-bold tracking-widest uppercase text-xs mb-4">
-            The Balehonnur Legacy
+            The Chikkamagaluru Legacy
           </span>
           <h2 className="text-3xl md:text-5xl font-serif text-brand-ink leading-tight max-w-2xl">
             Where the Western Ghats <br /> breathes life into every bean.
           </h2>
           <p className="mt-4 text-brand-ink/70 max-w-xl text-sm md:text-base leading-relaxed">
-            Balehonnur isn't just a location; it's the home of India's finest high-altitude Robusta. 
-            We source only A-grade beans from these mist-covered estates for 100% coffee purity.
+            Chikkamagaluru isn't just a location; it's the home of India's finest high-altitude 100% Pure Coffee. 
+            We source only Master-Blended beans from these mist-covered estates for 100% coffee purity.
           </p>
         </motion.div>
 
@@ -89,7 +89,7 @@ export default function StoryGrid() {
           </p>
         </motion.div>
 
-        {/* Card 4: King of Robusta */}
+        {/* Card 4: King of 100% Pure Coffee */}
         <motion.div 
           style={{ y: yFastValue }}
           whileHover={{ scale: 1.02, rotate: 1 }}
@@ -98,9 +98,9 @@ export default function StoryGrid() {
           <span className="text-brand-leaf font-bold tracking-widest uppercase text-[10px] mb-2">
             Heritage Grade
           </span>
-          <h3 className="text-2xl font-serif text-brand-ink mb-4">The King of Robusta.</h3>
+          <h3 className="text-2xl font-serif text-brand-ink mb-4">The King of 100% Pure Coffee.</h3>
           <p className="text-sm text-brand-ink/60 leading-relaxed">
-            Balehonnur is world-renowned for its bold, chocolatey Robusta profile. 
+            Chikkamagaluru is world-renowned for its bold, chocolatey 100% Pure Coffee profile. 
             We celebrate its strength without hiding it behind additives.
           </p>
         </motion.div>

@@ -17,7 +17,7 @@ const BrewingSteps = [
   { 
     step: "03", 
     title: "The Bloom", 
-    desc: "Pour a little water and wait 30 seconds. Watch the coffee bloom as it releases the Balehonnur aroma.", 
+    desc: "Pour a little water and wait 30 seconds. Watch the coffee bloom as it releases the Chikkamagaluru aroma.", 
     icon: "✨" 
   }
 ];

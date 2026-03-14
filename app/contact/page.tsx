@@ -23,7 +23,7 @@ export default function ContactPage() {
               Let's talk <br/> Pure Coffee.
             </h1>
             <p className="text-brand-ink/60 text-lg mb-12 max-w-md leading-relaxed">
-              Whether you're looking to stock Tresoro in your cafe or just want to chat about our Balehonnur heritage, we're here.
+              Whether you're looking to stock Tresoro in your cafe or just want to chat about our Chikkamagaluru heritage, we're here.
             </p>
 
             <div className="space-y-8">
@@ -33,7 +33,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h4 className="text-[10px] uppercase tracking-widest font-bold text-brand-leaf mb-2">Origin</h4>
-                <p className="text-xl font-serif text-brand-ink">Balehonnur, Chikmagalur</p>
+                <p className="text-xl font-serif text-brand-ink">Chikkamagaluru, Chikmagalur</p>
               </div>
             </div>
           </motion.div>

@@ -22,7 +22,7 @@ export default function AboutPage() {
               A Legacy in <br /> Every Bean.
             </h1>
             <p className="text-xl text-brand-ink/70 leading-relaxed font-light">
-              To the people of Balehonnur and Chikmagalur, coffee isn't a commodity—it's a 
+              To the people of Chikkamagaluru and Chikmagalur, coffee isn't a commodity—it's a 
               generational wealth of knowledge, soil, and spirit. We call it <strong>Tresoro</strong> because 
               it is the true treasure of our hills.
             </p>
@@ -33,7 +33,7 @@ export default function AboutPage() {
           {/* The Origin Story */}
           <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="bg-brand-mocha p-12 rounded-3xl text-brand-cream">
-               <h2 className="text-3xl font-serif mb-6">Born in Balehonnur</h2>
+               <h2 className="text-3xl font-serif mb-6">Born in Chikkamagaluru</h2>
                <p className="opacity-90 leading-relaxed">
                  Our journey started with a simple observation: the local coffee of our region 
                  was being hidden behind fillers and chicory. We wanted to bring back the 

@@ -41,9 +41,9 @@ export default function ChikmagalurStory() {
               </p>
             </div>
 
-            <h2 className="text-3xl font-serif text-brand-sand border-b border-brand-sand/20 pb-4">Balehonnur: The Crown Jewel</h2>
+            <h2 className="text-3xl font-serif text-brand-sand border-b border-brand-sand/20 pb-4">Chikkamagaluru: The Crown Jewel</h2>
             <p>
-              Within the vast Chikmagalur region, Balehonnur emerged as the 'Grand Cru' of Robusta. At Tresoro, we honor Baba Budan’s rebellion by keeping the coffee exactly as he found it: pure. While the world moved toward additives and shortcuts, we remained in the hills, guarding the original treasure of the Western Ghats.
+              Within the vast Chikmagalur region, Chikkamagaluru emerged as the 'Grand Cru' of 100% Pure Coffee. At Tresoro, we honor Baba Budan’s rebellion by keeping the coffee exactly as he found it: pure. While the world moved toward additives and shortcuts, we remained in the hills, guarding the original treasure of the Western Ghats.
             </p>
           </section>
         </article>

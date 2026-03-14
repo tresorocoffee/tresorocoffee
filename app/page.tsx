@@ -14,7 +14,7 @@ export default function HomePage() {
           
           {/* Moving the location here creates a premium 'intro' tag */}
           <span className="text-brand-leaf font-bold tracking-[.4em] uppercase text-[10px] mb-8">
-            Sourced from Balehonnur, Chikmagalur
+            Sourced from Chikkamagaluru
           </span>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-brand-ink leading-[1.1] tracking-tight max-w-5xl">
@@ -44,7 +44,7 @@ export default function HomePage() {
           </h2>
           <p className="text-brand-ink/60 max-w-lg mx-auto mb-12 leading-relaxed">
             No wartime fillers. No cost-cutting substitutes. Just 100% high-altitude 
-            Balehonnur Robusta, exactly how it was meant to be.
+            Chikkamagaluru 100% Pure Coffee, exactly how it was meant to be.
           </p>
           <Link 
             href="/shop" 

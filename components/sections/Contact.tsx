@@ -28,7 +28,7 @@ export default function Contact() {
             <h2 className="text-4xl font-serif text-brand-ink mb-4 text-brand-ink">Let's Talk Coffee.</h2>
             <p className="text-brand-ink/70 leading-relaxed">
               Whether you're looking to stock Tresoro Coffee in your cafe or just want to 
-              chat about our Balehonnur heritage, we're here.
+              chat about our Chikkamagaluru heritage, we're here.
             </p>
           </div>
           
@@ -39,7 +39,7 @@ export default function Contact() {
             </div>
             <div className="flex flex-col">
               <span className="text-brand-leaf text-xs font-bold uppercase tracking-widest">Origin</span>
-              <span className="text-xl font-serif text-brand-ink">Balehonnur, Chikmagalur</span>
+              <span className="text-xl font-serif text-brand-ink">Chikkamagaluru, Chikmagalur</span>
             </div>
           </div>
           

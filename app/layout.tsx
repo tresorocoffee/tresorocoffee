@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces" });
 
 export const metadata: Metadata = {
-  title: "Tresoro Coffee | Pure Balehonnur Coffee",
+  title: "Tresoro Coffee | Pure Chikkamagaluru Coffee",
   description: "Experience 100% pure coffee with zero chicory.",
 };
 

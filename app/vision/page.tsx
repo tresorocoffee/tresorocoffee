@@ -41,7 +41,7 @@ export default function VisionPage() {
             </div>
 
             <p>
-              Tresoro is our effort to restore that heritage—unadulterated and unapologetic. We are building this for the youth who care about where their food comes from, who value transparency over flashy marketing, and who deserve to taste the 'King of Robusta' in its purest form.
+              Tresoro is our effort to restore that heritage—unadulterated and unapologetic. We are building this for the youth who care about where their food comes from, who value transparency over flashy marketing, and who deserve to taste the 'King of 100% Pure Coffee' in its purest form.
             </p>
 
             {/* FOUNDERS' SIGNATURE SECTION */}

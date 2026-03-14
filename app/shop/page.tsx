@@ -10,7 +10,7 @@ export default function ShopPage() {
       <main className="bg-brand-cream pt-40 pb-20">
         <div className="max-w-7xl mx-auto px-6 mb-16">
           <span className="text-brand-leaf font-bold tracking-widest uppercase text-[10px] mb-4 block">
-            Pure Balehonnur Robusta
+            Pure Chikkamagaluru 100% Pure Coffee
           </span>
           <h1 className="text-5xl md:text-7xl font-serif text-brand-ink">
             The Collection

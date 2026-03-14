@@ -1,84 +1,81 @@
 'use client'; 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import PurityBadge from '../ui/PurityBadge';
+import { tresoroCollection } from '@/data/products';
 
 export default function ProductShowcase() {
-  const products = [
-    {
-      id: 1,
-      name: "Tresoro Signature Blend", //
-      weight: "250g",
-      price: "₹499",
-      description: "100% Pure coffee from the heart of Balehonnur. Zero fillers, zero chicory.", //
-      tag: "Best Seller"
-    },
-    {
-      id: 2,
-      name: "Balehonnur Estate Dark", //
-      weight: "250g",
-      price: "₹549",
-      description: "A bold, unadulterated Robusta that honors the Chikmagalur heritage.", //
-      tag: "Limited"
-    }
-  ];
+  // Set the default variant to the first one (250g)
+  const [selectedVariant, setSelectedVariant] = useState(tresoroCollection.variants[0]);
 
   return (
     <section id="shop" className="py-24 bg-brand-cream px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="bg-brand-sand/30 rounded-[3rem] p-8 md:p-12 border border-brand-sand/50 flex flex-col md:flex-row gap-12 items-center"
         >
-          <h2 className="text-4xl font-serif text-brand-ink">Our Collection</h2>
-          <p className="text-brand-leaf font-medium mt-2 italic">
-            "It's not just Coffee. It's Tresoro." — The treasure of Chikmagalur.
-          </p>
-        </motion.div>
+          {/* Product Visual */}
+          <div className="w-full md:w-1/2 aspect-square bg-brand-sand/50 rounded-3xl flex items-center justify-center relative overflow-hidden">
+            <PurityBadge className="absolute top-6 right-6" />
+            <span className="text-brand-mocha font-serif italic opacity-40">
+              {selectedVariant.weight} Pouch Image
+            </span>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product, index) => (
-            <motion.div 
-              key={product.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="group relative bg-brand-sand/30 rounded-3xl p-8 border border-brand-sand/50 transition-all hover:shadow-2xl hover:bg-brand-sand/40"
-            >
-              {/* The Purity Badge: Positioned absolutely for high visibility */}
-              <PurityBadge className="absolute top-4 right-4" />
+          {/* Product Details */}
+          <div className="w-full md:w-1/2 space-y-6">
+            <div>
+              <span className="bg-brand-forest text-brand-cream text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">
+                {selectedVariant.weight === "250g" ? "Founder's Reserve" : "Premium Blend"}
+              </span>
+              <h2 className="text-4xl font-serif text-brand-ink mt-4">{tresoroCollection.name}</h2>
+              <p className="text-brand-ink/60 text-sm leading-relaxed mt-4">
+                {tresoroCollection.description}
+              </p>
+            </div>
 
-              <div className="aspect-square bg-brand-sand/50 rounded-2xl mb-6 flex items-center justify-center overflow-hidden">
-                <motion.div 
-                   whileHover={{ scale: 1.05 }}
-                   transition={{ type: "spring", stiffness: 300 }}
-                   className="text-brand-mocha font-serif italic text-lg opacity-50"
-                >
-                  {product.weight} Pouch Image
-                </motion.div>
+            {/* Variant Selector */}
+            <div className="space-y-2">
+              <label className="text-[10px] uppercase tracking-widest font-bold text-brand-leaf">Select Quantity</label>
+              <select 
+                className="w-full bg-white border border-brand-sand p-4 rounded-xl text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-forest"
+                onChange={(e) => setSelectedVariant(tresoroCollection.variants[parseInt(e.target.value)])}
+              >
+                {tresoroCollection.variants.map((v, i) => (
+                  <option key={v.weight} value={i}>{v.weight}</option>
+                ))}
+              </select>
+            </div>
+
+            {/* Price and Action */}
+            <div className="flex justify-between items-center pt-6 border-t border-brand-sand/50">
+              <div className="flex flex-col">
+                {selectedVariant.discountPrice ? (
+                  <>
+                    <span className="text-xs line-through text-brand-ink/30">₹{selectedVariant.price}</span>
+                    <span className="text-3xl font-bold text-brand-mocha">₹{selectedVariant.discountPrice}</span>
+                  </>
+                ) : (
+                  <span className="text-3xl font-bold text-brand-mocha">₹{selectedVariant.price}</span>
+                )}
               </div>
               
-              <div className="space-y-2">
-                <span className="bg-brand-forest text-brand-cream text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">
-                  {product.tag}
-                </span>
-                <h3 className="text-2xl font-serif text-brand-ink pt-2">{product.name}</h3>
-                <p className="text-brand-ink/60 text-sm leading-relaxed">
-                  {product.description}
-                </p>
-                <div className="flex justify-between items-center pt-6 border-t border-brand-sand/50 mt-4">
-                  <span className="text-xl font-bold text-brand-mocha">{product.price}</span>
-                  <button className="bg-brand-ink text-brand-cream px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-forest transition-colors shadow-md">
-                    Add to Cart
-                  </button>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+              {/* Dynamic Button Logic */}
+              {selectedVariant.weight === "250g" ? (
+                <button className="bg-brand-forest text-brand-cream px-10 py-4 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-brand-ink transition-all shadow-lg">
+                  Order Now
+                </button>
+              ) : (
+                <button className="bg-brand-ink/20 text-brand-ink/40 px-10 py-4 rounded-full text-xs font-bold uppercase tracking-widest cursor-not-allowed transition-all">
+                  Coming Soon
+                </button>
+              )}
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

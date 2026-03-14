@@ -6,13 +6,13 @@ const stages = [
   { 
     id: 1, 
     label: "The Bloom", 
-    desc: "Balehonnur jasmine-like flowers. The start of our treasure.", 
+    desc: "Chikkamagaluru jasmine-like flowers. The start of our treasure.", 
     src: "https://images.unsplash.com/photo-1447078806655-40579c2520d6?auto=format&fit=crop&w=800" 
   },
   { 
     id: 2, 
     label: "The Harvest", 
-    desc: "Selected A-Grade cherries from Chikmagalur estates.", 
+    desc: "Selected Master-Blended cherries from Chikmagalur estates.", 
     src: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800" 
   },
   { 

@@ -28,7 +28,7 @@ export default function HeroProduct() {
             <KineticHeading text="The Dark Treasure." />
           </div>
           <p className="text-xl text-brand-ink/70 leading-relaxed">
-            "It's not just Coffee. It's Tresoro." Pure Balehonnur beans, zero chicory.
+            "It's not just Coffee. It's Tresoro." Pure Chikkamagaluru beans, zero chicory.
           </p>
         </div>
 
